@@ -1,0 +1,30 @@
+{
+  "name": "aryan-srivastava-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website for Aryan Srivastava",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "responsive",
+    "modern",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "author": "Aryan Srivastava",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio.git"
+  },
+  "homepage": "https://yourusername.github.io/portfolio"
+}
