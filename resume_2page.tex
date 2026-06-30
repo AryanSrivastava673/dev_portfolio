@@ -1,0 +1,138 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\definecolor{linkblue}{RGB}{0,90,180}
+\usepackage[colorlinks=true, linkcolor=linkblue, urlcolor=linkblue, citecolor=linkblue]{hyperref}
+\usepackage{titlesec}
+\usepackage{array}
+
+\pagenumbering{gobble}
+\setlist{topsep=4pt, partopsep=2pt}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\vspace{-4pt}\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{14pt}{10pt}
+
+\begin{document}
+
+\textbf{\Large Aryan Srivastava} \\
+\href{mailto:aryansrivastava673@gmail.com}{aryansrivastava673@gmail.com} \ | 8411002542 \\
+\href{https://www.linkedin.com/in/aryan-srivastava-dev/}{linkedin.com/in/aryan-srivastava-dev} \ |
+\href{https://github.com/AryanSrivastava673}{github.com/AryanSrivastava673} \ |
+\href{https://aryansrivastava673.github.io/dev_portfolio/}{Portfolio} \ |
+\href{https://leetcode.com/u/aryansrivastava673/}{LeetCode}
+
+\section*{Professional Summary}
+
+Full Stack Java Developer (2 yrs) building scalable backend services with Java and Spring Boot and frontends with React. Founder and lead developer of \textbf{Naira Menus}, a deployed restaurant-tech SaaS now piloting with real cafe clients — owning architecture, backend, frontend, infrastructure, and go-to-market. Strong in RESTful API design, microservices, multi-tenant systems, and secure coding within Agile/CI-CD workflows. Distinctively combines software engineering with hands-on RPA and intelligent automation (UiPath, Power Automate) — including building AI agents for error detection and root-cause analysis across business-critical processes. Recognized at EPAM Systems as an \textbf{India Performance Champion} for delivering high-impact solutions and exceeding performance expectations.
+
+%====================
+\section*{Technical Skills}
+
+\begin{tabular}{@{} >{\bfseries}p{0.13\textwidth} p{0.32\textwidth} >{\bfseries}p{0.14\textwidth} p{0.31\textwidth} @{}}
+Languages  & Java (8+, 21), JavaScript                                  & Frontend   & React (18/19), HTML5, CSS3, Bootstrap \\[3pt]
+Backend    & Spring Boot 3, Spring Framework, Spring Security, JWT, JPA/Hibernate & Architecture & Microservices, REST APIs, Multi-Tenant Systems, System Design (LLD/HLD) \\[3pt]
+Databases  & PostgreSQL, MySQL                                          & Real-Time  & WebSocket (STOMP/SockJS) \\[3pt]
+DevOps     & Docker, Docker Compose, Nginx, Cloudflare Tunnel, Azure (VM, Managed MySQL), Git, CI/CD (GitHub Actions, Jenkins), Maven & Messaging  & Kafka, JMS (foundational) \\[3pt]
+Automation & UiPath, Microsoft Power Automate, BPM platforms (Flowable) & Testing    & JUnit, Integration Testing \\[3pt]
+Integrations & Webhooks, WhatsApp Cloud API, Web Serial API (ESC/POS)   & AI \& Tools & Claude Code, Cursor, AI Agents, Hugging Face, OpenCV \\[3pt]
+Practices  & Agile/Scrum, Code Reviews, Design Patterns, Jira          & PM Tools   & Jira, Code360 \\
+\end{tabular}
+
+%====================
+\section*{Experience}
+
+\textbf{Junior Software Engineer -- EPAM Systems} \hfill May 2024 -- Present
+
+Fullstack developer on a 37-member global team for CoreLogic Credit, focused on optimization and cost reduction via Intelligent Automation and BPM solutions.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item Developed and maintained full-stack applications using \textbf{Java, Spring Boot} and \textbf{React JS}, integrating front-end user interfaces with core back-end automation services on a BPM platform.
+\item Implemented secure REST APIs using \textbf{Spring Security} to enforce authentication and authorization controls.
+\item Designed database models using \textbf{JPA/Hibernate} and optimized SQL queries for performance.
+\item Contributed to CI/CD pipelines to automate build and deployment processes, and participated in peer code reviews ensuring adherence to coding standards and security best practices.
+\item Cut order processing time by ~64\% — from ~11 minutes to ~4 minutes per order — through targeted system enhancements and performance optimization.
+\item Onboarded to an enterprise \textbf{UiPath RPA} project; currently monitoring and maintaining \textbf{50+ existing automation processes} to ensure reliability and uptime.
+\item Developing an \textbf{AI agent} integrated with UiPath Orchestrator logs to automate error detection, root-cause analysis, and fix suggestions — reducing manual triage time significantly.
+\item Building reusable \textbf{AI-driven automation components} for business use cases, improving process efficiency and reducing manual intervention across workflows.
+\item Earned the \textbf{India Performance Champion} award and \textbf{Fearless Problem Solver} and \textbf{Innovation Enabler} recognition badges for high-impact delivery and innovative problem-solving.
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{Intern -- Radisys} \hfill June 2023 -- August 2023
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item Learned 5G network fundamentals and built a tool to fetch JIRA results per user and route them to individual users and admins.
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{Web Development Intern -- Let'sGrowMore} \hfill June 2022 -- July 2022
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item Completed frontend development tasks using HTML, CSS, JavaScript, and React.js.
+\end{itemize}
+
+%====================
+\section*{Projects}
+
+\textbf{Naira Menus — QR/NFC Restaurant Ordering SaaS (Deployed Startup)} \hfill \href{https://nairamenus.in}{nairamenus.in}
+
+Founded and led end-to-end development as sole engineer — product, architecture, backend, frontend, infra, and deployment — of an NFC-powered digital menu and ordering platform built to replace paper menus, now live and onboarding real cafe clients in a paid pilot phase. Stack: \textbf{Spring Boot 3 (Java 21), React 19, MySQL, Docker, Nginx, Cloudflare}, deployed on an \textbf{Azure VM} with \textbf{Azure Database for MySQL} (managed).
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item Architected \textbf{multi-tenant, multi-outlet} data isolation — a single tenant boundary scaling to unlimited outlets per organization under one owner login, with role-based access control (Owner/Manager/Admin) and cookie-token outlet switching.
+\item Implemented stateless \textbf{JWT authentication} using HttpOnly cookies (no Spring Security) with a 3-tier token-priority resolution chain, read-only support impersonation for customer-support debugging, and a custom request rate-limiting filter.
+\item Built 3 separate React frontends — customer-facing menu, admin dashboard, and operations console — sharing a common Spring Boot backend.
+\item Delivered real-time kitchen and table-call updates over \textbf{WebSocket (STOMP/SockJS)} with topic-scoped subscriptions, cutting order-to-kitchen latency to sub-second.
+\item Engineered driverless thermal receipt printing, streaming raw \textbf{ESC/POS} bytes directly via the Web Serial API (58/80mm, auto-cut) — eliminating the need for printer driver installs — with automatic PDF-dialog fallback for unsupported devices.
+\item Integrated 2 external platforms: \textbf{UrbanPiper} food-aggregator (webhook-based order ingestion) and \textbf{Meta WhatsApp Cloud API} for order notifications, plus a fail-open menu transliteration service for regional-language menus.
+\item Deployed and self-hosted the full stack on an \textbf{Azure VM}, with data persisted in a managed \textbf{Azure Database for MySQL} instance for automated backups and patching.
+\item Containerized 4 services with \textbf{Docker Compose + Nginx + Cloudflare Tunnel}, exposing public HTTPS with zero open inbound ports, and automated deploys via \textbf{GitHub Actions CI/CD}.
+\item Backed core services with \textbf{31 unit/integration test suites (JUnit)} covering auth, billing, ordering, and entitlements.
+\item Designed, built, and shipped the public-facing marketing website (\href{https://nairamenus.in}{nairamenus.in}) used for client acquisition and onboarding.
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{GenCheck — AI Content Authenticity Detector} \hfill \href{https://github.com/GenCheck-Anti-AI}{GitHub}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item Built a multi-modal platform that verifies the authenticity of text, image, and video content using \textbf{Hugging Face} models and \textbf{OpenCV}, structured as 3 backend microservices (Spring Boot, Python Flask) with a React frontend.
+\item Designed clean API contracts and modular service boundaries separating detection, processing, and serving concerns for scalability and maintainability.
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{DeezNews — News Aggregator Web App} \hfill \href{https://github.com/AryanSrivastava673/DeezNews-Web-Application}{GitHub}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item Built a dynamic news web application using \textbf{React} and \textbf{Bootstrap}, integrating the NewsAPI to fetch up-to-date articles across categories like technology, business, and entertainment.
+\end{itemize}
+
+%====================
+\section*{Certifications}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item \href{https://verify.skilljar.com/c/ntwcqez43qw2}{Claude 101}
+\item \href{https://verify.skilljar.com/c/de5d5kecwqm9}{Building with the Claude API}
+\item \href{https://verify.skilljar.com/c/oxgyk8vd95fr}{Claude Code in Action}
+\item \href{https://verify.skilljar.com/c/i8busxw5r9i2}{Introduction to Model Context Protocol}
+\end{itemize}
+
+%====================
+\section*{Education}
+\vspace{4pt}
+\textbf{Vellore Institute of Technology}, Vellore, India \\
+\textbf{B.Tech in Computer Science and Engineering} \hfill 2020 -- 2024
+
+%====================
+\section*{Currently Exploring}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item AI Engineer Core Track: LLM Engineering, RAG, QLoRA, and AI Agents (Udemy)
+\item System Design from Basics to Advanced — Low-Level and High-Level Design (Udemy)
+\item Web3 \& Blockchain Fundamentals (Coursera) — Completed
+\end{itemize}
+
+\end{document}
