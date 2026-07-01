@@ -386,27 +386,51 @@ strong { color:var(--text); font-weight:600; }
     border:1px solid var(--bd); color:var(--dim);
 }
 
-/* Certifications row */
-.certs-row {
-    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
-    padding:18px 0; border-top:1px solid var(--bd);
+/* Certifications card */
+.certs-card {
+    margin-top:28px;
+    border-radius:16px;
+    border:1px solid rgba(79,142,247,.25);
+    background:linear-gradient(135deg, rgba(79,142,247,.06) 0%, rgba(79,142,247,.02) 100%);
+    overflow:hidden;
 }
-.certs-lbl {
-    font-family:var(--mono); font-size:.72rem; color:var(--faint);
-    text-transform:uppercase; letter-spacing:.5px; margin-right:4px;
+.certs-header {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:18px 22px 14px;
+    border-bottom:1px solid rgba(79,142,247,.12);
+}
+.certs-kicker {
+    font-family:var(--mono); font-size:.7rem; text-transform:uppercase;
+    letter-spacing:.08em; color:var(--accent); margin-bottom:3px;
+}
+.certs-provider {
+    font-size:.78rem; color:var(--dim);
+}
+.certs-icon {
+    font-size:1.1rem; color:rgba(79,142,247,.4);
+}
+.certs-list {
+    display:flex; flex-direction:column;
 }
 .cert {
-    font-size:.82rem; padding:5px 12px; border-radius:999px;
-    border:1px solid var(--bd); color:var(--dim); transition:all .2s;
+    display:flex; align-items:center; gap:10px;
+    padding:13px 22px;
+    border-bottom:1px solid var(--bd);
+    color:var(--dim); font-size:.88rem;
+    transition:all .18s;
 }
-.cert:hover { color:var(--text); border-color:var(--bd2); }
+.cert:last-child { border-bottom:none; }
+.cert:hover { background:rgba(255,255,255,.03); color:var(--text); }
+.cert-name { flex:1; }
+.cert-arrow { font-size:.8rem; opacity:0; transition:opacity .18s; }
+.cert:hover .cert-arrow { opacity:.5; }
+.cert-star { color:var(--accent); font-size:.8rem; }
 .cert-featured {
-    color:var(--text);
-    border-color:rgba(79,142,247,.5);
-    background:rgba(79,142,247,.08);
-    font-weight:600;
+    color:var(--text); font-weight:500;
+    background:rgba(79,142,247,.06);
 }
-.cert-featured:hover { border-color:var(--accent); background:rgba(79,142,247,.14); }
+.cert-featured .cert-arrow { opacity:.4; }
+.cert-featured:hover { background:rgba(79,142,247,.1); color:#fff; }
 
 /* ── Learning ─────────────────────────────────────── */
 .learn-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
